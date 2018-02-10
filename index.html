@@ -4,35 +4,51 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato:100,400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
 
 <body>
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
         <div class="w3-sidebar" id="myNavbar">
-            <a class="w3-bar-item button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-            <a href="#home" class="w3-bar-item button w3-hide-small"><i class="fa fa-home fa-2x"></i></a>
-            <a href="#about" class="w3-bar-item button w3-hide-small"><i class="fa fa-user fa-2x"></i> </a>
-            <a href="#portfolio" class="w3-bar-item button w3-hide-small"><i class="fa fa-th fa-2x"></i> </a>
-            <a href="#contact" class="w3-bar-item button w3-hide-small"><i class="fa fa-envelope fa-2x"></i> </a>
+            <a class="w3-bar-item button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()"
+                title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="#home" class="w3-bar-item button w3-hide-small">
+                <i class="fa fa-home fa-2x"></i>
+            </a>
+            <a href="#about" class="w3-bar-item button w3-hide-small">
+                <i class="fa fa-th fa-2x"></i>
+            </a>
+            <a href="#portfolio" class="w3-bar-item button w3-hide-small">
+                <i class="fa fa-user fa-2x"></i>
+            </a>
+            <a href="#contact" class="w3-bar-item button w3-hide-small">
+                <i class="fa fa-envelope fa-2x"></i>
+            </a>
         </div>
         <!-- Navbar on small screens -->
         <div id="mobileNav" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
             <a href="#home" class="w3-bar-item button" onclick="toggleFunction()">HOME</a>
-            <a href="#about" class="w3-bar-item button" onclick="toggleFunction()">ABOUT</a>
-            <a href="#portfolio" class="w3-bar-item button" onclick="toggleFunction()">PORTFOLIO</a>
+            <a href="#about" class="w3-bar-item button" onclick="toggleFunction()">PORTFOLIO</a>
+            <a href="#portfolio" class="w3-bar-item button" onclick="toggleFunction()">ABOUT</a>
             <a href="#contact" class="w3-bar-item button" onclick="toggleFunction()">CONTACT</a>
         </div>
     </div>
     <!-- First Parallax Image with Logo Text -->
     <div class="bgimg bgimg-1 w3-display-container" id="home">
         <div class="w3-display-middle title" style="white-space:nowrap;">
-            <span class="w3-center w3-black w3-xlarge w3-wide"><span class="w3-hide-small">HELLO, I'M</span><span> SCOT RENZ.</span>
-            <br><span class="w3-hide-small"> FULL STACK WEB DEVELOPER</span></span>
+            <span class="w3-center w3-black w3-xlarge w3-wide">
+                <span class="w3-hide-small">HELLO, I'M</span>
+                <span> SCOT RENZ.</span>
+                <br>
+                <span class="w3-hide-small"> FULL STACK WEB DEVELOPER</span>
+            </span>
         </div>
     </div>
     <!-- Container (Portfolio Section) -->
@@ -40,17 +56,22 @@
         <div class="section bg1"></div>
         <br>
         <h3 class="w3-center">MY WORK</h3>
-        <p class="w3-center"><em>Here are some of my latest projects.<br> Click on the images to make them bigger</em></p>
+        <p class="w3-center">
+            <em>Here are some of my latest projects.
+                <br> Click on the images to make them bigger</em>
+        </p>
         <br>
         <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
         <div class="w3-row-padding w3-center">
             <div class="w3-col m4">
                 <div class="w3-card card-1">
-                    <img src="assets/pictures/get-lost-screenshot-1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Get Lost Project">
+                    <img src="assets/pictures/get-lost-screenshot-1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                        alt="Get Lost Project">
                 </div>
             </div>
             <div class="w3-col m4">
-                <img src="assets/pictures/brushworks-screenshot-1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Brushworks Website">
+                <img src="assets/pictures/brushworks-screenshot-1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Brushworks Website">
             </div>
             <div class="w3-col m4">
                 <img src="assets/pictures/verify-screenshot-1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Verify Project">
@@ -70,7 +91,9 @@
     </div>
     <!-- Modal for full size images on click-->
     <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-        <span class="button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+        <span class="button w3-large w3-black w3-display-topright" title="Close Modal Image">
+            <i class="fa fa-remove"></i>
+        </span>
         <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
             <img id="img01" class="w3-image">
             <p id="caption" class="w3-opacity w3-large"></p>
@@ -83,7 +106,7 @@
             <img class="icon" src="assets/icons/javascript.svg">
             <img class="icon" src="assets/icons/jquery.svg">
         </div>
-        <div class="w3-third w3-section">    
+        <div class="w3-third w3-section">
             <img class="icon" src="assets/icons/sass.svg">
             <img class="icon" src="assets/icons/react.svg">
             <img class="icon" src="assets/icons/node.svg">
@@ -105,28 +128,78 @@
     <!-- Container (About Section) -->
     <div class="w3-content w3-container w3-padding-64" id="portfolio">
         <h3 class="w3-center">SCOT RENZ</h3>
-        <p class="w3-center"><em>Constantly Curious, Consistently Coding</em></p>
-        <p>Always looking for new challenges and tirelessly honing my craft, I am a full stack developer with an eye for detail and a mind for solutions. My background is diverse. From growing up in the midwest and going to school for aerospace engineering, working as an actor and model in New York, quelling my entreprenurial spirit running my own fitness company, and now pursuing the future in tech. I have had the honor to work with and learn from great developers, I look forward </p>
         <div class="w3-row">
-            <div class="w3-col m6 w3-center w3-padding-large">
-                <br>
-                <img class="w3-image profile_picture profile_picture-left" src="assets/pictures/barcelonabeach.jpg" alt="Photo of Me" width="500" height="333">
-            </div>
-            <!-- Hide this text on small devices -->
-            <div class="w3-col m6 w3-hide-small w3-padding-large">
-                <div class="profile_picture-right">
-                <ul>
-                    <li>Javascript</li>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>Sass</li>
-                    <li>React</li>
-                    <li>Redux</li>
-                    <li>NodeJS</li>
-                    <li>MySQL</li>
-                    <li>mongoDB</li>
-                    
-                </ul>
+            <div class="u-margin-top-medium">
+                <div class="w3-col m6 w3-center w3-padding-large">
+                    <div class="profile__section-left">
+                        <div class="image-responsive">
+                            <img class="w3-image image-responsive__picture" src="assets/pictures/barcelonabeach.jpg" alt="Photo of Me" width="500" height="333">
+                            <div class="image-responsive__overlay">
+                                <h2></h2>
+                                <p class="image-responsive__overlay--set1">
+                                    <a href="#">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                                </p>
+                                <hr>
+                                <hr>
+                                <p class="image-responsive__overlay--set2">
+                                    <a href="#">
+                                        <i class="fa fa-codepen"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa fa-stack-overflow"></i>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hide this text on small devices -->
+                <div class="w3-col m6 w3-hide-small w3-padding-large">
+                    <div class="profile__section-right">
+                        <div class="text-box">
+                            <div class="text-box__section text-box__section-default">
+                                <h4 class="text-box__section--title">Constantly Curious, Consistently Coding</h4>
+                                <div  class="text-box__section--content">
+                                    <p>
+                                        Always looking for new challenges and tirelessly honing my craft, I'm a full stack developer with an eye for detail and a
+                                        mind for solutions. My background is diverse. From growing up in the midwest and
+                                        going to school for aerospace engineering, working as an actor and model in New York,
+                                        quelling my entreprenurial spirit running my own fitness company, and now pursuing
+                                        the future in tech and it's immeasurable opportunity to shape society. I have had
+                                        the honor to work with and learn from great developers and I can't wait to tackle
+                                        what's next.
+                                    </p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="text-box__section">
+                                <h4 class="text-box__section--title">Why Tech?</h4>
+                                <div class="text-box__section--content">
+                                    <p>
+                                        My love of code stems from my life long passion for building. I grew up renovating homes, working on cars, and fixing the
+                                        things that are broken. I've never found anything more satisfying and I'll always
+                                        have a little of that blue collar streak.
+                                    </p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="text-box__section">
+                                <h4 class="text-box__section--title">My Skills</h4>
+                                <div class="text-box__section--content">
+                                    <p>
+                                        My skillset consists of HTML, CSS, Sass, Javascript, jQuery, React, Redux, NodeJS, MySQL, and MongoDB. Currently exploring
+                                        VR with ReactVR and building a VR workspace so I can get this big desk out of my
+                                        apartment.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -154,20 +227,23 @@
                     <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: scotrenz@gmail.com
                     <br>
                 </div>
-                <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-                <form action="/action_page.php" target="_blank">
+                <p>Swing by for a cup of
+                    <i class="fa fa-coffee"></i>, or leave me a note:</p>
+                <form id="contact-form" method="POST" action="https://formspree.io/scotrenz@gmail.com">
                     <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
                         <div class="w3-half">
                             <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
                         </div>
+                        <input type="text" name="_gotcha" style="display:none" />
                         <div class="w3-half">
                             <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
                         </div>
                     </div>
-                    <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                    <input class="w3-input w3-border" type="text" name="message" placeholder="Message" required name="Message">
                     <button class="button w3-black w3-right w3-section" type="submit">
                         <i class="fa fa-paper-plane"></i> SEND MESSAGE
                     </button>
+                    <input type="hidden" name="_next" value="scotrenz.github.io" />
                 </form>
             </div>
         </div>
@@ -182,8 +258,7 @@
         </div>
         <div>Scot Renz&copy;</div>
     </footer>
-    <!-- Add Google Maps -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
     <script type="text/javascript" src="js/logic.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmNX29rk_tbFqoDWIyYCg5TglI2OP8Xnk&callback=myMap"></script>
 </body>

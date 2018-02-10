@@ -17,8 +17,8 @@
 
     // Modal Image Gallery
     function onClick(element) {
-        document.getElementById("img01").src = element.src;
-        document.getElementById("modal01").style.display = "block";
+        $("#img01").src = element.src;
+        $("#modal01").style.display = "block";
         var captionText = document.getElementById("caption");
         captionText.innerHTML = element.alt;
     }
@@ -44,4 +44,6 @@
             x.className = x.className.replace(" w3-show", "");
         }
     }
+
+    
  

@@ -1,5 +1,5 @@
 .bg1 {
-    background-color: #272727;
+    background-color: $text-color-primary;
     color: white;
 }
 
@@ -13,4 +13,10 @@
     height: 9vw;
     transform: skewY(5deg);
     transform-origin: left;
+}
+
+.profile__section{
+    &-right{
+        height: 47rem;
+    }
 }

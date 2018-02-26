@@ -1,7 +1,5 @@
 # Scot Renz Portfloio
 
-## About
-
 Portfolio made to showcase my projects, about me, and contact info. Feel free to use it and improve it!
 
 ## Live Link

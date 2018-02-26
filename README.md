@@ -1,4 +1,4 @@
-#Scot Renz Portfloio
+# Scot Renz Portfloio
 
 ## About
 

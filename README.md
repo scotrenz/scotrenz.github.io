@@ -17,7 +17,3 @@ Npm install, CSS edited in Sass files
 ## Authors
 
 Scot Renz
-
-## License
-
-MIT License

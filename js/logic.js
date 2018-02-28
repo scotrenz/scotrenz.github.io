@@ -1,13 +1,4 @@
-// import DirectionReveal from "direction-reveal";
-
-// const directionRevealSwing = DirectionReveal({
-//     selector: '.direction-reveal',              // Container element selector.
-//     itemSelector: '.direction-reveal__card',    // Item element selector.
-//     animationName: 'swing',                     // Animation CSS class.
-//     enableTouch: true,                          // Adds touch event to show content on first click then follow link on the second click.
-//     touchThreshold: 250                         // Touch length must be less than this to trigger reveal which prevents the event triggering if user is scrolling.
-//   });
-
+// Cards Wiggle Animation
 var cards = document.querySelectorAll(".card"), i;
 
 for (i = 0; i < cards.length; i++) {
@@ -18,9 +9,9 @@ for (i = 0; i < cards.length; i++) {
 function wiggle (card){
   card.addEventListener('mousemove', function (e) {
     var wh = window.innerHeight / 2,
-    ww = window.innerWidth / 2,
+    //ww = window.innerWidth / 2,
     offX = this.offsetLeft,
-    offY = this.offsetTop
+    //offY = this.offsetTop
     offW = this.offsetWidth/2;
     this.style.setProperty('--mouseX', (e.clientX - offX - offW) / 25);
     this.style.setProperty('--mouseY', (e.clientY - wh) / 25);
@@ -33,16 +24,6 @@ card.addEventListener('mouseleave', function (e) {
   this.style.setProperty('--mouseY', 0);
 
 });
-}
-
-
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
 }
 
 // Used to toggle the menu on small screens when clicking on the menu button
